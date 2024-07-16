@@ -1,0 +1,68 @@
+{
+    "info": {
+      "_postman_id": "30b3c9e3-6e70-4c32-84ce-3f1db0eae2a4",
+      "name": "EvaExchange API",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+      {
+        "name": "POST /api/buy",
+        "request": {
+          "method": "POST",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": {
+            "mode": "raw",
+            "raw": "{\n  \"portfolioId\": 1,\n  \"symbol\": \"ABC\",\n  \"quantity\": 10\n}"
+          },
+          "url": {
+            "raw": "localhost:3000/api/buy",
+            "protocol": "localhost:3000",
+            "host": [
+              "localhost"
+            ],
+            "port": "3000",
+            "path": [
+              "api",
+              "buy"
+            ]
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "POST /api/sell",
+        "request": {
+          "method": "POST",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": {
+            "mode": "raw",
+            "raw": "{\n  \"portfolioId\": 1,\n  \"symbol\": \"ABC\",\n  \"quantity\": 5\n}"
+          },
+          "url": {
+            "raw": "localhost:3000/api/sell",
+            "protocol": "localhost:3000",
+            "host": [
+              "localhost"
+            ],
+            "port": "3000",
+            "path": [
+              "api",
+              "sell"
+            ]
+          }
+        },
+        "response": []
+      }
+    ]
+  }
+  
